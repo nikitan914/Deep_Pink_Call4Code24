@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Deep Pink</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<style type="text/css" media="all">
+		@import url(index.css);
+	</style>
+</head>
+<body>
+<div id="container">
+  <div id="header"> 
+    <h1><a href="#">Deep Pink</a></h1>
+    <div class="description">Deep Knowledge</div>
+    <div class="description">Deep Care</div>
+    <div class="description">For Every Woman!</div>
+  </div>
+  <div id="sidebar">
+    <p>Deep Pink is powered by  IBM <img src="images/watsonx.png" 
+      alt="watsonx" width="100px" height="45px"/>
+      </p>
+    <p>    
+    <img src="images/bcancer.jpg" width="50%" height="50%"/>
+  </p>
+ </div>
+  <div id="content">
+    <div class="post">
+      <h2>About Deep Pink</h2>
+      <p> 
+        <p>Deep Pink isn't just a name, it's a beacon of hope in 
+          the fight against breast cancer. This AI-powered chatbot 
+          brings personalized risk assessment to underserved communities, fostering empowerment and knowledge where it's needed most. Imagine a future where every woman, regardless of background, can take control of their health journey. Deep Pink is building that future, one conversation at a time.
+        </p>
+        <br />
+        <p>
+          Deep Pink is your friendly AI companion on the path to breast cancer awareness.  Chat with Deep Pink to understand your personalized risk factors and get clear information. We use powerful AI to empower underserved communities, because early detection is key. Deep Pink is here to guide you towards a healthier future, one conversation at a time.
+        </p>
+      </div>
+      
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "39ceddec-baad-4261-b5fa-e2a64e1422d0", // The ID of this integration.
+    region: "us-south", // The region your integration is hosted in.
+    serviceInstanceID: "e4bca246-49e7-42a9-a9cc-29533f31e8d5", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+  </div>
+  <div id="footer">  </div>
+</body>
+</html>
